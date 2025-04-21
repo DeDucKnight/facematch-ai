@@ -1,0 +1,14 @@
+Q1. What is the advantage of using pre-trained models like FaceNet or VGGFace?
+A: Pre-trained models (like mentioned) save time and resources by providing high quality embeddings trained on massive datasets.
+
+Q2. What’s the difference between cosine similarity and Euclidean distance in face recognition?
+A: Cosine similarity measures the angle between two embedding vectors (focuses on direction), while Euclidean distance measures the straight-line distance (focuses on magnitude). Cosine is often more robust to lighting/scale variations.
+
+Q3. How would you prevent spoofing using printed photos or videos in a face recognition system?
+A: You can prevent spoofing using liveness detection techniques such as blink detection, depth sensors, infrared imaging, or motion analysis during capture.
+
+Q4: How do you handle face recognition accuracy in poor lighting or angled faces?
+A: Use robust models like ArcFace and apply data augmentation (e.g., rotation, brightness normalization) during preprocessing or use multi-angle enrollment images.
+
+Q5. When would you choose cloud-based (e.g., Google Vision) vs. edge/local model inference?
+A: Choose cloud-based inference for scalability and high accuracy when latency is acceptable; choose edge/local inference for faster response times, privacy, or when operating offline.
