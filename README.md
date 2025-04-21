@@ -35,12 +35,12 @@ source venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
 ```
 
-▶️ Run the Server
+## ▶️ Run the Server
 ```bash
 uvicorn main:app --reload
 ```
 
-📸 API Endpoints
+## 📸 API Endpoints
 POST /match
 Accepts 2 face images
 
@@ -52,7 +52,7 @@ Accepts user_id + image
 Stores face embedding in memory for later use
 
 
-📁 Notes & Assumptions
+## 📁 Notes & Assumptions
 Uses DeepFace’s Facenet model by default
 
 Uses retinaface detector (you can change to mtcnn or opencv in utils.py)
@@ -60,7 +60,7 @@ Uses retinaface detector (you can change to mtcnn or opencv in utils.py)
 This is a prototype — embeddings are stored in-memory (user_db dict)
 
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 Python 3.12
 
 FastAPI
